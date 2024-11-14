@@ -10,7 +10,7 @@
     "description": "A generic golang egg that compiles the application and saves an executable\r\n\r\nMeant to be customized before it is used.",
     "features": null,
     "docker_images": {
-        "ghcr.io\/Ptero-Eggs\/yolks:debian": "ghcr.io\/Ptero-Eggs\/yolks:debian"
+        "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
     },
     "file_denylist": [],
     "startup": ".\/${EXECUTABLE}",

@@ -10,13 +10,13 @@
     "description": "A Generic Python Egg for Pterodactyl\r\n\r\nTested with: https:\/\/github.com\/Ispira\/pixel-bot",
     "features": null,
     "docker_images": {
-        "Python 3.12": "ghcr.io\/Ptero-Eggs\/yolks:python_3.12",
-        "Python 3.11": "ghcr.io\/Ptero-Eggs\/yolks:python_3.11",
-        "Python 3.10": "ghcr.io\/Ptero-Eggs\/yolks:python_3.10",
-        "Python 3.9": "ghcr.io\/Ptero-Eggs\/yolks:python_3.9",
-        "Python 3.8": "ghcr.io\/Ptero-Eggs\/yolks:python_3.8",
-        "Python 3.7": "ghcr.io\/Ptero-Eggs\/yolks:python_3.7",
-        "Python 2.7": "ghcr.io\/Ptero-Eggs\/yolks:python_2.7"
+        "Python 3.12": "ghcr.io\/ptero-eggs\/yolks:python_3.12",
+        "Python 3.11": "ghcr.io\/ptero-eggs\/yolks:python_3.11",
+        "Python 3.10": "ghcr.io\/ptero-eggs\/yolks:python_3.10",
+        "Python 3.9": "ghcr.io\/ptero-eggs\/yolks:python_3.9",
+        "Python 3.8": "ghcr.io\/ptero-eggs\/yolks:python_3.8",
+        "Python 3.7": "ghcr.io\/ptero-eggs\/yolks:python_3.7",
+        "Python 2.7": "ghcr.io\/ptero-eggs\/yolks:python_2.7"
     },
     "file_denylist": [],
     "startup": "if [[ -d .git ]] && [[ \"{{AUTO_UPDATE}}\" == \"1\" ]]; then git pull; fi; if [[ ! -z \"{{PY_PACKAGES}}\" ]]; then pip install -U --prefix .local {{PY_PACKAGES}}; fi; if [[ -f \/home\/container\/${REQUIREMENTS_FILE} ]]; then pip install -U --prefix .local -r ${REQUIREMENTS_FILE}; fi; \/usr\/local\/bin\/python \/home\/container\/{{PY_FILE}}",

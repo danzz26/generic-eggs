@@ -10,12 +10,12 @@
     "description": "Creates a container that runs java.",
     "features": null,
     "docker_images": {
-        "ghcr.io\/Ptero-Eggs\/yolks:java_8": "ghcr.io\/Ptero-Eggs\/yolks:java_8",
-        "ghcr.io\/Ptero-Eggs\/yolks:java_11": "ghcr.io\/Ptero-Eggs\/yolks:java_11",
-        "ghcr.io\/Ptero-Eggs\/yolks:java_16": "ghcr.io\/Ptero-Eggs\/yolks:java_16",
-        "ghcr.io\/Ptero-Eggs\/yolks:java_17": "ghcr.io\/Ptero-Eggs\/yolks:java_17",
-        "ghcr.io\/Ptero-Eggs\/yolks:java_19": "ghcr.io\/Ptero-Eggs\/yolks:java_19",
-        "ghcr.io\/Ptero-Eggs\/yolks:java_21": "ghcr.io\/Ptero-Eggs\/yolks:java_21"
+        "ghcr.io\/ptero-eggs\/yolks:java_8": "ghcr.io\/ptero-eggs\/yolks:java_8",
+        "ghcr.io\/ptero-eggs\/yolks:java_11": "ghcr.io\/ptero-eggs\/yolks:java_11",
+        "ghcr.io\/ptero-eggs\/yolks:java_16": "ghcr.io\/ptero-eggs\/yolks:java_16",
+        "ghcr.io\/ptero-eggs\/yolks:java_17": "ghcr.io\/ptero-eggs\/yolks:java_17",
+        "ghcr.io\/ptero-eggs\/yolks:java_19": "ghcr.io\/ptero-eggs\/yolks:java_19",
+        "ghcr.io\/ptero-eggs\/yolks:java_21": "ghcr.io\/ptero-eggs\/yolks:java_21"
     },
     "file_denylist": [],
     "startup": "java -Dterminal.jline=false -Dterminal.ansi=true -jar {{JARFILE}}",
@@ -28,7 +28,7 @@
     "scripts": {
         "installation": {
             "script": "#!\/bin\/bash\r\n# Java Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\nPROJECT=java\r\n\r\napt update\r\napt install -y curl jq\r\n\r\ncd \/mnt\/server",
-            "container": "ghcr.io\/Ptero-Eggs\/yolks:debian",
+            "container": "ghcr.io\/ptero-eggs\/yolks:debian",
             "entrypoint": "bash"
         }
     },
